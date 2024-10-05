@@ -29,7 +29,7 @@ public class Climber extends SubsystemBase {
         // Enabling the leader follower motor configuration and inverting the values for 1 of the motors because of the way they were mounted lol.
         followerMotor.follow(leaderMotor, true);        
 
-        //Initializing the PIDController and the Encoder for the leader motor. 
+        // Initializing the PIDController and the Encoder for the leader motor. 
         m_pidController = leaderMotor.getPIDController();
         m_Encoder = leaderMotor.getEncoder();
         
